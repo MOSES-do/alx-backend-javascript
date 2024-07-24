@@ -1,13 +1,12 @@
-export default function(success) {
+export default function (success) {
   return new Promise((resolve, reject) => {
     if (success) {
       resolve({
-        "status":200,
-        "body":"success"
+        status: 200,
+        body: 'success',
       });
-    }
-    else {
-      reject(new Error("The fake API is not working currently"));
+    } else {
+      reject(new Error('The fake API is not working currently'));
     }
   });
 }
