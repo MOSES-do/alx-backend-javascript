@@ -1,4 +1,4 @@
-export default function (success) {
+export default function handleResponseFromAPI (success) {
   const p = new Promise((resolve, reject) => {
     if (typeof success === 'boolean') {
       if (success) {
